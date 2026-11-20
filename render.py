@@ -281,8 +281,11 @@ for i, st in enumerate(LEAD_SIDE):
     if i == 0:
         line(sx, sy - 6, W - M, sy - 6, FAINT, 1)
 
-# tiny cyclone spiral beside the Akvan block
-cx, cy, r0 = W - M - 34, LY + 148, 26
+# tiny cyclone spiral beside the Akvan block: it sits right of the
+# body's second line and the sources line, in the clear band between
+# the first body line (ends y=286) and the lead-row rule (y=330), so
+# no glyph ever touches the graphic
+cx, cy, r0 = W - M - 36, LY + 163, 17
 for k in range(3):
     a0 = k * 2.1
     pts = []
